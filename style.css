@@ -200,48 +200,4 @@ body {
     padding-top: 10px;
 }
 
-/* 响应式设计 */
-@media (max-width: 550px) {
-    .container1, .container2 {
-        width: auto;
-    }
-    
-    .profile-picture {
-        width: auto;
-    }
-    
-    .avatar {
-        width: auto;
-         width: auto;
-       
-    }
-    
-    .age-calculator h1 {
-        font-size: 1.5rem;
-    }
-    
-    .age-display {
-        font-size: 2.8rem;
-    }
-    
-    .details {
-        font-size: 0.9rem;
-    }
-}
 
- 
-@media screen and ( max-width: 960px ) {
-  .details strong { color: #000000; }
-}
- 
-@media screen and ( max-width: 768px ) {
-   .details strong { color: #17ffe8; }
-}
- 
-@media screen and ( max-width: 550px ) {
-    .details strong { color: #374e3b; }
-}
- 
-@media screen and ( max-width: 320px ) {
-  .details strong { color: #af0909; }
-}
