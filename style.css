@@ -1,0 +1,247 @@
+/* 重置默认样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, hsl(50, 100%, 78%) 0%, #c28603 100%);
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* 容器1样式 - 包含头像和个人信息 */
+.container1 {
+    background: rgb(236, 238, 211);
+    border-radius: 30px;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-picture {
+    
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(140deg, #ff4756, #aed1ff, #00b499);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(173, 53, 53, 0.2);
+    animation: rainbow 2s linear infinite; /* bababooey animation */
+}
+
+.avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: linear-gradient(140deg, #000000, #000000, #000000);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+    color: #2575fc;
+     animation: rainbow 2s linear infinite;
+     transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+
+
+/* 确保图片在放大时不会变形 */
+.avatar img {
+    transition: transform 0.3s ease;
+}
+
+/* 鼠标悬停时放大效果 */
+.avatar:hover {
+    transform: scale(1.2);
+}
+
+
+.avatar2 {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: linear-gradient(140deg, #000000, #000000, #000000);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+    color: #2575fc;
+    
+     transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.avatar2 img {
+    transition: transform 0.3s ease;
+}
+
+/* 鼠标悬停时放大效果 */
+.avatar2:hover {
+    transform: scale(1.2);
+}
+
+
+
+
+
+@keyframes rainbow {
+    0% { background: linear-gradient(140deg, #ff0000, #ff8000); }
+    16% { background: linear-gradient(140deg, #ffff00, #80ff00); }
+    32% { background: linear-gradient(140deg, #00ff00, #00ff80); }
+    48% { background: linear-gradient(140deg, #00ffff, #0080ff); }
+    64% { background: linear-gradient(140deg, #0000ff, #8000ff); }
+    80% { background: linear-gradient(140deg, #ff00ff, #ff0080); }
+    100% { background: linear-gradient(140deg, #ff0000, #ff8000); }
+
+}
+
+
+.profile-info h2 {
+    color: #2575fc;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.profile-info p {
+    color: #666;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+
+.container2 {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.age-calculator {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    width: 100%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.age-calculator h1 {
+    color: #2575fc;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+.birth-info {
+    background: #f0f5ff;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 15px 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.age-display {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #2575fc;
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.details {
+    font-size: 1rem;
+    color: #4f4d4d;
+    line-height: 1.2;
+    margin-top: 1px;
+    min-height: 1px;
+}
+
+.details strong {
+    color: #ff0a9d;
+}
+
+.update-info {
+    font-size: 0.9rem;
+    color: #888;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+.footer {
+    margin-top: 25px;
+    font-size: 0.8rem;
+    color: #aaa;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
+
+/* 响应式设计 */
+@media (max-width: 550px) {
+    .container1, .container2 {
+        width: auto;
+    }
+    
+    .profile-picture {
+        width: auto;
+    }
+    
+    .avatar {
+        width: auto;
+         width: auto;
+       
+    }
+    
+    .age-calculator h1 {
+        font-size: 1.5rem;
+    }
+    
+    .age-display {
+        font-size: 2.8rem;
+    }
+    
+    .details {
+        font-size: 0.9rem;
+    }
+}
+
+ 
+@media screen and ( max-width: 960px ) {
+  .details strong { color: #000000; }
+}
+ 
+@media screen and ( max-width: 768px ) {
+   .details strong { color: #17ffe8; }
+}
+ 
+@media screen and ( max-width: 550px ) {
+    .details strong { color: #374e3b; }
+}
+ 
+@media screen and ( max-width: 320px ) {
+  .details strong { color: #af0909; }
+}
